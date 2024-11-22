@@ -1,4 +1,5 @@
 #include <aio.h>
+#include <bits/pthreadtypes.h>
 #include <unistd.h>
 #include "malloc.h"
 
@@ -14,6 +15,9 @@ union header {
 };
 
 typedef union header header_t;
+
+header_t *head, *tail;
+pthread_mutex_t global_malloc_lock;
 
 void *malloc(size_t size) {
     void *block;
