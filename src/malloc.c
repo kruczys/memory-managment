@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include "malloc.h"
 
-void *global_base = NULL; // pierwszy wskaznik na kopcu, inicjalizowany przy pierwszym callu do malloca
+void *global_base = NULL; 
 
 header *find_free_block(header **last, size_t size) {
     header *current = global_base;
@@ -42,7 +42,6 @@ void *malloc(size_t size) {
         if (!block) {
             return NULL;
         }
-
         global_base = block;
     } else {
         header *last = global_base;
