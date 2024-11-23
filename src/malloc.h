@@ -8,4 +8,5 @@ typedef struct header {
 
 #define HEADER_SIZE sizeof(header)
 
+header *find_free_block(header **last, size_t size);
 void *malloc(size_t size);
