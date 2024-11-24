@@ -5,7 +5,6 @@ int main() {
     char *hewwo, *wowwd;
 
     hewwo = malloc(6);
-    wowwd = malloc(6);
 
     hewwo[0] = 'H';
     hewwo[1] = 'e';
@@ -14,6 +13,12 @@ int main() {
     hewwo[4] = 'o';
     hewwo[5] = '\0';
 
+
+    printf("%s %s!\n", hewwo, wowwd);
+
+    free(hewwo);
+
+    wowwd = malloc(6);
     wowwd[0] = 'W';
     wowwd[1] = 'o';
     wowwd[2] = 'r';
