@@ -15,8 +15,8 @@ The project uses Make for compilation. To build:
 
 ```bash
 make            # Compile the project
-make clean      # Remove build files
 ./bin/main      # Run example program which can be seen below
+make clean      # Remove build files
 ```
 
 ## Project Structure
