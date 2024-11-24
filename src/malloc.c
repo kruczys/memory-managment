@@ -58,11 +58,3 @@ void *malloc(size_t size) {
     return (block + 1);
 }
 
-void free(void *ptr) {
-    if (!ptr) {
-        return;
-    }
-
-    header *block_ptr = (header* )ptr - 1;
-    block_ptr->free = 1;
-}
