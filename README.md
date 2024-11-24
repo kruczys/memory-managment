@@ -35,7 +35,7 @@ project/
 
 ## Usage Example
 
-Here's a simple "Hello World" program using our custom memory allocator:
+Here's a simple "Hello World" program using my implementation of malloc and free:
 
 ```c
 #include <stdio.h>
