@@ -1,3 +1,3 @@
 #include <unistd.h>
 
-void *calloc(size_t nmemb, size_t size);
+void *calloc(size_t amount, size_t size);
